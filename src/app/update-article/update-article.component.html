@@ -1,0 +1,57 @@
+<div *ngIf="visi" style="margin-left:20px;margin-right:20px;margin-top:100px;margin-bottom: 100px;">
+    <div class="card-panel teal center">
+        <h4 style="color:white;">No Articles Added By You At</h4>
+        </div>
+</div>
+<div class="back">
+    <div class="my-top my-text-white">
+    <nav class="my-sidebar my-bar-block my-card my-animate-left my-hide-medium my-hide-large my-padding-16 my-display-topleft" style="display:none" id="mySidebar"> 
+                
+</nav> </div>
+
+<div class="alert" *ngFor="let int of articles;let idx=index">
+        <span  class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <h2>{{int.title}}</h2>
+        
+       {{int.content}} 
+      </div>
+      
+<div class="my-theme-l5">
+<div class="my-container my-content" style="max-width:1388px;">
+<div class="my-row">
+    <div class="my-col m10">
+        <!--<div class="my-row-padding">
+            <div class="my-col m12">
+                <div class="my-card my-round my-white">
+                    <div class="my-container my-padding">
+                        <h4>Ask Your Question</h4>
+                        <p contenteditable="true" class="my-border my-padding">Always Ready to help you</p>
+                        <button type="button" class="my-button my-theme"><i class="fa fa-pencil"></i>  Ask</button> 
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div *ngFor="let article of articles; let idx = index">
+        <div class="my-container my-card my-white my-round my-margin" >
+            <br>
+            <div *ngFor="let art of article.articles">
+                <img src="../../assets/images/avatar6.png" alt="Avatar" class="my-left my-circle my-margin-right" style="width:60px">
+                <span class="my-right my-opacity">{{(art.date)}}</span>
+                <h4>{{art.author}}</h4>
+                <span class="my-opacity">Category : {{(art.interest)}}</span>
+                <br>
+                    <hr class="my-clear">
+                    <p class="center"><b>{{art.title}}</b></p>
+                    <img src={{art.imagePath}} style="width:100%" class="my-margin-bottom responsive-img">
+                    <p style="white-space: pre-line;text-indent: 25%;">{{art.content}}</p>
+                    <button type="button" class="my-button my-theme-d2 my-margin-bottom" (click)="commentEvaluate(art,article.author)"><i class="fa fa-edit fa-2x"></i>&nbsp;  Update</button> 
+            </div>   
+        </div>
+        </div>
+        
+        
+        <!-- End Middle Column -->
+    </div>
+    <!-- Right Column -->
+</div>
+</div>

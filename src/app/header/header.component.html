@@ -1,0 +1,31 @@
+<div class="back">
+        <div class="my-top my-text-white" >
+           <div class="my-bar topnav my-animate-top" style="z-index:1;">
+              <a href="javascript:void(0)" id="navbar" class="my-bar-item my-button my-right  my-hide-large my-hide-medium " style="z-index: 50;" onclick="my_open()"><i class="fa fa-bars"></i></a>
+              <a class="my-bar-item my-button my-left" style="font-size:23px; padding-left:18px;">Notion</a>
+              <div class="my-hide-small my-right right">
+                 <a routerLink="/" routerLinkActive="active" class="my-bar-item my-button ">Home</a> 
+                 
+                 <a routerLink="/activity" routerLinkActive="active" class="my-bar-item my-button">Articles</a>
+                 <a routerLink="/categories" routerLinkActive="active" class="my-bar-item my-button">Categories</a>
+                    
+                 
+                 <a routerLink="/profile" routerLinkActive="active" class="my-bar-item my-button">Profile</a>
+                 <a routerLink="/login" *ngIf="loginp" #login routerLinkActive="active" class="my-bar-item my-button" id="login">Login</a>
+                 <a routerLink="/signup" *ngIf="registerp" #register routerLinkActive="active" class="my-bar-item my-button" id="login">register</a>
+                 <a routerLink="/logout" *ngIf="logoutp" #logout  routerLinkActive="active" class="my-bar-item my-button" id="login">Logout</a>
+
+               </div>
+        </div>
+
+        <nav class="my-sidebar my-bar-block my-card my-animate-left my-hide-medium my-hide-large my-padding-16 my-display-topleft" style="display:none;z-index: 50;" id="mySidebar">
+              <a routerLink="/" routerLinkActive="active" class="my-bar-item my-button my-large " onclick="my_close()">Home</a>
+              <a routerLink="/activity" routerLinkActive="active" class="my-bar-item my-button my-large " onclick="my_close()">Articles</a>
+   
+             <a routerLink="/categories" routerLinkActive="active" class="my-bar-item my-button my-large" onclick="my_close()">Catagories</a>
+              
+              <a routerLink="/profile" routerLinkActive="active" class="my-bar-item my-button my-large" onclick="my_close()">Profile</a>
+              <a routerLink="/login" routerLinkActive="active" class="my-bar-item my-button my-large" onclick="my_close();log();">Login</a>	
+           </nav>
+        </div>
+</div>

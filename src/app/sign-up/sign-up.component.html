@@ -1,0 +1,30 @@
+<app-content></app-content>
+<div class="bg-modal" style="display:flex;">
+	<div class="modal-content w3-black my-animate-zoom">
+	   <form id='signup-form' #signup="ngForm" (ngSubmit)=onSubmit(signup) >
+		<a class="close" routerLink="/" routerLinkActive="active">+</a>
+		  <div class="text-center">
+			 <img src="../../assets/images/user.png" style="width:130px;"><br><br>
+		  </div>
+		  <input type="text" placeholder="First Name" style="width: 47%;color: white;" required="true" [ngModelOptions]="{standalone: true}" [(ngModel)]="fname">
+		  <input type="text" placeholder="Last Name" class="my-right" style="width: 47%;color: white;" required="true" [ngModelOptions]="{standalone: true}" [(ngModel)]="lname">
+		  <input type="text" style="color: white;" placeholder="Username" required="true" [ngModelOptions]="{standalone: true}" [(ngModel)]="username">
+		  <input type="password" style="color: white;" class="pass" placeholder="Password" required="true" [ngModelOptions]="{standalone: true}" [(ngModel)]="password">
+		  <input type="password" class="my-right"  placeholder="Re Password" style="color: white;" required="true" [ngModelOptions]="{standalone: true}" [(ngModel)]="cpassword">
+		  <!-- <input type="checkbox" required="true" class="my-check" style="margin-bottom:15px;color:white; height:20px;"/> I agreed with terms and conditions.<br> -->
+		  <label>
+				<input type="checkbox" class="filled-in" [(ngModel)]="object.selected" [ngModelOptions]="{standalone: true}"
+				(ngModelChange)="onChange(object.selected)" />
+				<span>Admin</span>
+			  </label><br/>
+		  <!-- <input type="checkbox" 
+			[(ngModel)]="object.selected" 
+			(ngModelChange)="onChange(object.selected)" value="select" name="select"> -->
+		  <input type="password" *ngIf="object.selected"  placeholder="Admin Password" style="color: white;" [ngModelOptions]="{standalone: true}" [(ngModel)]="adpassword">		  
+		  <button  type="submit" class="btn waves-effect waves-light my-light-green">Register</button>
+      <p class="my-right" >Already Account ? <a id='form-switch' class="my-text-red my-medium my-hover-text-blue-gray"
+        routerLink="/login" routerLinkActive="active" >Sign In</a></p>
+     </form>
+     
+	</div>
+</div>

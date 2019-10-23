@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="my-col m10">
+    
+        <div class="center">
+                <div *ngIf="commentsAvailable" class="card-panel teal lighten-2">
+            
+                    <div class="center">No Comments Available For This Articles</div>
+                    <div class="center" style="color:white;">You can Add your own one</div>
+                </div>
+        </div>
+
+        <div class="card-panel white lighten-2">
+            <div class="center">
+                <div style="background-color:wheat;border-radius: 30px;margin-bottom: 10px;"> Add Comments</div>
+                <textarea #commentAdd rows="5" style="border-radius: 10px;height:25%;font-size: 20;">
+                </textarea>
+                <button type="submit" class="btn btn-primary" (click)="AddComment(commentAdd)" style="margin-top:7px;">Add Comment</button>
+            </div>
+        </div>
+        <div *ngFor="let comment of Comments; let idx = index">
+                <div class="my-container my-card my-white my-round my-margin" >
+                    <br>
+            
+                        <img src="../../assets/images/avatar6.png" alt="Avatar" class="my-left my-circle my-margin-right" style="width:60px">
+                        <span class="my-right my-opacity">{{(comment.comment.createDate)}}</span>
+                        <h4>{{comment.comment.author}}</h4>
+                        <br>
+                            <hr class="my-clear">
+        
+                            <p style="white-space: pre-line;text-indent: 25%;">{{comment.comment.text}}</p>
+              
+                </div>
+                </div>
+    </div>
+</div>

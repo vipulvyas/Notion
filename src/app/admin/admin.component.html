@@ -1,0 +1,75 @@
+<div >
+   
+    <div id="box" class=row>
+            
+            <span class="Success card-panel col-3"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;&nbsp;46</span>    
+            <span class="Success card-panel col-3"><i class="fa fa-newspaper-o" aria-hidden="true"></i> &nbsp;&nbsp; 50</span>
+            <span class="Success card-panel col-3"><a [routerLink]="['/signup']" routerLinkActive="router-link-active" >New Admin</a></span>
+            <span class="Success card-panel col-3"><a [routerLink]="['/logout']" routerLinkActive="router-link-active" >Logout</a></span>
+
+    </div>
+    
+
+<div class="center card-panel" style="margin:10px">
+        <div id="subject2" class="badge badge-primary"><h5>Send Message To all Users</h5></div>
+        <div class="row">
+            <div class="col s12 center">
+                <input type="text" class="center" placeholder="Title" #caption style="width: 60%;color: cornflowerblue;" required>
+            </div>
+        </div>
+        <div class="center">
+            <textarea id="subject" class="center" name="subject" #code placeholder="..........Write something......." style="text-align: left;;text-indent: 15%;"></textarea>
+        </div>
+        <button style="margin-top: 10px;" type="submit" class="btn btn-success" (click)="sendMessage(caption,code)" value="Send Message">Send Message</button>
+
+</div>
+
+</div>
+<div class="card-panel" style="margin:10px">
+<div style="max-width:400px;margin:auto;margin-top: 40px;margin-bottom: 30px;" class="row"> 
+        <div class="col-12"> 
+            <input class="form-control input-field"  type="text" placeholder="Username to Search..." (input)="findUser($event.target.value)">
+        </div> 
+  </div>
+  <div class="center" *ngIf = "!display" style="margin-top: 40px;margin-bottom: 40px;">...Search For Users....
+    </div>
+<div *ngIf="display">
+<table class="striped centered table-hover">
+    <thead>
+      <tr class="card-panel teal">
+          <th>Username</th>
+          <th>Fname</th>
+          <th>Profile</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of findUsers" class="card-panel" style="margin-bottom: 3px;">
+        <td>{{user.username}}</td>
+        <td>{{user.fname}}</td>
+        <td><button class="btn btn-primary">View</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+
+  <div class="card-panel" style="margin:10px">
+    <div style="max-width:400px;margin:auto;margin-top: 40px;margin-bottom: 30px;" class="row"> 
+            <div class="col-12"> 
+                <input class="form-control input-field" #cate type="text" placeholder="...Category..." >
+            </div>
+            <div >
+              <button style="margin-top: 10px;" type="submit" class="btn btn-success" (click)="addCategory(cate)" value="Add Category">Add Category</button>
+              <button style="margin-top: 10px;" type="submit" class="btn btn-success" (click)="deleteCategory(cate)" value="Delete Category">Delete Category</button>
+            </div>  
+
+
+      
+      </div>
+     <!-- <div class="center" *ngIf = "!display" style="margin-top: 40px;margin-bottom: 40px;">...Category....
+        </div>-->
+          
+    
+      
+      </div>

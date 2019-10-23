@@ -1,0 +1,79 @@
+<div class="back">
+        <div class="my-top my-text-white">
+        <nav class="my-sidebar my-bar-block my-card my-animate-left my-hide-medium my-hide-large my-padding-16 my-display-topleft" style="display:none" id="mySidebar"> 
+                    
+    </nav> </div>    
+<div class="my-theme-l5">
+<div class="my-container my-content" style="max-width:1400px;">
+    <div class="my-row">
+        <div class="my-col m4">
+            <p>&nbsp; </p>
+        </div>
+        <div class="my-col m4">
+            <div class="my-card my-round my-white">
+                <div class="my-container">
+                    <h2 class="my-center">My Profile</h2>
+                    <p class="my-center"><img src="../../assets/images/avatar3.png" class="my-circle" style="height:150px;width:150px" alt="Avatar"></p>
+                    <hr>
+                    <p><i class="fa fa-pencil fa-fw my-margin-right my-text-theme my-xlarge"></i> {{username}}</p>
+                    <!--<p><i class="fa fa-home fa-fw my-margin-right my-text-theme my-xlarge"></i> Nadiad, India</p>
+                    <p><i class="fa fa-birthday-cake fa-fw my-margin-right my-text-theme my-xlarge"></i> April 9, 2000</p>
+                    -->  </div>
+            </div>
+            <br>
+            <!-- Accordion -->
+            <div class="my-card my-round">
+                <div class="my-white">
+                    <button id='click1' class="my-button my-block my-theme-l1 my-left-align"><i class="fa fa-circle-o-notch fa-fw my-margin-right"></i> Followers</button>
+                    <div id="Demo1" class="my-container" style="display:none">
+                        <p>{{followers}}</p>
+                    </div>
+                    <button id='click2' class="my-button my-block my-theme-l1 my-left-align"><i class="fa fa-calendar-check-o fa-fw my-margin-right"></i> Article</button>
+                    <div id="Demo2" class="my-hide my-container">
+                        <p>Total Article is &nbsp;&nbsp;{{artsize}}</p>
+                    </div>
+                    <button id='click3' class="my-button my-block my-theme-l1 my-left-align"><i class="fa fa-users fa-fw my-margin-right"></i> Following</button>
+                    <div  id="Demo3" class="my-hide my-container">
+                        <div class="my-row-padding">
+                            <p>{{following}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="my-card my-round my-white my-hide-small">
+                <div class="my-container">
+                    <h3>Interests</h3>
+                       
+                       <!-- <h3 class="my-tag my-large my-theme-d5">News</h3>&nbsp;-->
+                        <div *ngFor="let int of interest;let idx=index" >
+                            <h3 class="my-tag my-large my-theme-d4">{{int}}</h3>&nbsp;
+
+                        </div>
+                    
+
+                      <!--  <h3 class="my-tag my-large my-theme-d3">Labels</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-d2">Games</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-d1">Friends</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme">Games</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-l1">Friends</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-l2">Food</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-l3">Design</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-l4">Art</h3>&nbsp;
+                        <h3 class="my-tag my-large my-theme-l5">Photos</h3>&nbsp;
+                       -->
+                </div>
+            </div>
+            <br>
+            <div class="my-container my-display-container my-round my-theme-l4 my-border my-theme-border my-margin-bottom my-hide-small my-text-white">
+                <span onclick="this.parentElement.style.display='none'" style="margin:5px;" class="my-theme-l3 my-display-topright">
+                <i class="fa fa-remove"></i>
+                </span>
+                <p><strong>Hey!</strong></p>
+                <p>People are looking at your profile. Find out who.</p>
+                <br>
+            </div>
+               
+            </div>
+        </div>            
+    </div>

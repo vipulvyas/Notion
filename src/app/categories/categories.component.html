@@ -1,0 +1,32 @@
+<div class="back">
+        
+                <div class="hometext my-animate-zoom" style="font-size:10px"><span class="heading">Because Ideas Matters!</span><br><span class="heading2">Online Question Answer Portal Where You Can Share Your Ideas And Thoughts.</span><br><br><br><br></div>
+        </div>
+     <br>
+     <div class="my-center">
+            <h1>Categories Page</h1>
+    </div>
+         <br>
+   
+         <div *ngFor="let int of Available_interest;let idx=index" >
+         <div class="card" style="width: 600px;margin: auto;margin-bottom: 10px;">
+                <div class=" my-animate-fading col-3">
+                   <div class="center">
+                      <label>
+                         <img class="img-responsive" src="../../assets/images/edu.jpg">
+                         <input type="checkbox" class="filled-in my-checkbox"  style="opacity: 1;margin-top: 20px;margin-left: 100px;" (change)="insertinvited(int,idx)">
+                         <h2 class="card-body" style="opacity: 1;color:black;">{{int}}</h2>
+                       
+                      </label>
+                   </div>
+               
+               </div>
+         </div>
+      </div><br/><br/>
+     <div class="my-center" style="margin-top:20px">
+        <a  type="submit" (click)="editInterest()" class="my-light-green my-xlarge btn btn-default" style="padding: 3px 5px 3px 5px; 
+           font-family: Changa">Submit</a>
+     </div>
+    
+     <br><br>
+

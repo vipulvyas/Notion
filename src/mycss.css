@@ -1,0 +1,661 @@
+   		 @font-face
+	   {
+	   	src:url("Changa/Changa-Regular.ttf");
+	   	font-family: Changa;
+	   }
+		body,h1,h2,h3,h4,h5,h6,span,a,p,button
+		{			
+			
+			line-height: 1.6;
+		}
+
+		body
+		{
+			margin:0;
+			padding:0;
+			line-height:1.5;			
+		}
+
+   		 i{
+            padding-left: 15px;
+            color:white;
+        	}
+        
+        .bg-modal{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            top:0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 2;
+        }
+        .modal-content{
+            border-radius: 4px;
+            padding: 20px;        
+            position: relative;
+            border: 1px solid white;
+            background-color: rgba(0,0,0,0.9); 
+            color: white;
+            font-family: 'Changa',cursive;
+        }
+        input {
+            margin-bottom:5px;
+            padding:10px;
+            width: 100%;  
+            border:1px solid #CCC;
+        }
+        
+        .close{
+            position: absolute;
+            top: 0;
+            right:15px;
+            font-size:30px;
+            transform: rotate(45deg);
+            cursor: pointer;
+            color: white;
+        }
+        
+        #registration-form{
+            display: none;
+        }
+       .image-checkbox 
+       {
+		cursor: pointer;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		margin-bottom: 0;
+		outline: 0;
+		}
+		.image-checkbox input[type="checkbox"]
+		{
+			display: none;
+		}
+
+		.my-third img
+		{
+			height: 200px;
+			width: 300px;
+		}
+
+		.image-checkbox-checked{
+			
+			transform: scale(1.15);
+			transform: rotate(-20deg);		
+		}
+
+
+		.image-checkbox-checked .fa {
+  			
+  			display: block !important;
+		}
+		
+		
+		nav a
+		{
+			line-height:2.1;   
+		}
+		button
+		{
+			padding: 19px 20px 19px 20px;
+		}
+		.topnav
+		{
+			font-size: 20px;
+			position: fixed;
+			background-color: rgba(0,0,0,0.5);
+				z-index: 1;
+		}
+		.my-top
+		{
+			font-family: 'Changa',cursive;
+
+		}
+		
+		.topnav .my-button
+		{
+				padding: 11px 15px 11px 15px;
+				color: white;
+				margin-right: 5px;
+
+		}
+		.my-button:hover
+		{
+			background-color:#8bc34a;
+			animation: mymove 0.7s 1;
+			color: black;
+		}
+
+		#navbar
+		{
+			margin:0px; 
+			padding: 17px 20px 17px 05px; 
+			z-index: 50;
+		}
+
+		.logo img
+		{
+				line-height: 2.4;
+				margin-left:4%; 
+				width: 150px;
+				height: 100px;
+				padding-top: 5px; 
+		}
+
+		.my-bar span 
+		{
+			margin:5% !important;
+		}
+
+		.back
+		{
+			background-position:relative;
+			background-position:center;
+    		background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("backgrnd.jpg");
+    		background-attachment: fixed;
+    		background-size:cover;				
+    		width: 100%;
+    		min-height: auto;
+    		font-family: 'Changa',cursive;
+		}
+		.back2
+		{
+			background-position:relative;
+			background-position:center;
+    		background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("image1.jpg");
+    		background-attachment: fixed;
+    		background-size:cover;				
+    		width: 100%;
+    		min-height: auto;
+		}
+		.right
+		{
+			margin-right: 7%;
+		}
+
+		input
+		{
+			border-radius: 2px;	
+			outline:0px;
+			height: auto;
+			font-color:solid red;
+			transition: transform 0.4s;
+		}
+
+		input:focus
+		{
+			transform: scaleX(1.06);
+		}
+		button
+		{
+			outline: none;
+			border-radius: 3px;
+		}
+		.icon
+		{
+		  float: right;
+		  margin-top:-37px;
+		  margin-right:10px; 	
+		  color: black;
+		  font-weight: bolder;
+		  position: relative;
+		  z-index: 2;
+		}
+		.icon2
+		{
+		  float: right;
+		  margin-top:-55px;
+		  margin-right:10px; 
+		  font-weight: bolder;
+		  position: relative;
+		  z-index: 2;
+		  }
+		.tbutton:hover
+		{
+			animation:mymoves 0.5s 1;
+			background-color: #7bf34a;
+		}
+		.my-sidebar
+		{
+			background-color: rgba(0,0,0,0.9);
+			position: fixed;
+		}
+		.my-sidebar .my-button
+		{
+			max-width: 120px;
+			width: auto;
+			margin: 5px;
+			padding: 2px 10px !important;
+			border-radius: 3px;
+		}
+
+		.padding
+		{
+			margin-left:30px; 
+		}
+		.details 
+		{
+			padding: 30px;
+			font-family: 'Changa',sans-serif;		
+		}
+		
+		.details div
+		{
+			margin: 0px;
+		}
+
+		
+		.aboutus:hover
+		{
+			transform: rotateY(180deg);
+		}
+		.frontface
+		{
+			transform: rotateY(0deg);
+			backface-visibility: hidden;
+			position: absolute;
+			left:30%;
+		}
+		.backface
+		{
+			transform: rotateY(180deg);
+			backface-visibility: hidden;
+			position: absolute;
+			text-align: center;
+		}
+		
+		.social img
+		{
+			padding-right: 2%;
+			padding-left: 2%;
+			height:70px;
+			width: 130px; 		
+		}
+		.social
+		{
+			margin-top: 2%;
+		}
+		.social img:hover
+		{
+			transform: scale(1.1);
+		}
+
+		@keyframes mymove 
+		{
+	    from {margin-top:0px;}
+	    to {margin-top:-6px;}
+		}
+
+		@keyframes mymoves
+		{
+	    from {transform: scale(1);}
+	    to {transform: scale(1.1);}
+		}
+		@keyframes myrotate
+		{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(-25deg);}
+		}
+	
+
+		@media (max-width:700px)
+		{		
+		.hometext
+		{
+			margin-left:5%;
+			padding-top: 5%;	
+			color: white;	
+			width: 90%;
+			height: 100%;
+			min-height: 450px;
+			line-height: 2.4;	
+		}
+
+		.tbutton
+		{
+			border-radius:0px 5px;
+			font-size: 18px;
+			background-color:#7bf34a;
+			padding: 4px 12px;
+			font-size: 20px;
+
+		}
+		.details
+		{
+			background-color: rgba(255,255,255,0.1) !important;
+		}
+
+		.details p
+		{
+			font-size:40px; 
+			font-family: 'Changa',cursive;	
+		}
+
+		.details div
+		{
+			width: 50%;
+			font-size:15px; 
+		}
+		.heading
+		{
+			font-size: 6em;
+
+		}
+		.heading2
+		{
+			font-size: 2em;
+		}
+		.heading3
+		{
+			display: none;
+		}
+
+		.modal-content
+		{
+			z-index: 1000;
+            max-width: 100%;
+            margin-right:3%;
+            margin-left: 3%; 
+            max-height: 500px;
+            padding: 10px;
+            top: 20px;
+            font-size: 13px;
+        }
+        .myfooter
+		{
+			background-color: rgba(0,0,0,0.8);
+			text-align: center;
+			font-size: 20px;
+			font-family: 'Marmelad',sans-serif;
+			padding-top: 10%;
+			background-color: #00001a;
+		}
+		.myhead
+		{
+			font-size: 25px;
+			color:rgba(255,255,255,0.9);
+			border-bottom: 2px solid white;
+			font-family: 'Marmelad',sans-serif;		
+		}
+		.back2 .aboutus
+		{
+			margin-left:5%;
+			margin-bottom:5%;
+			width: 90%;
+			border-radius: 3px;
+			background-color: rgba(255,255,255,0.8);
+			height: 170px;
+			padding-top: 8%;
+			box-shadow: 2px 2px 2px 2px black;
+			transition: 1.7s;
+			transform-style: preserve-3d;
+
+		}
+		
+		.catagories .my-third
+		{
+			margin:0% 10% 0% 10% !important;
+			width: 100%;
+
+		}
+
+		.img-responsive
+		{
+			max-width: 160%;
+		}
+		.heads
+		{	
+			font-size: 2.4em;
+			padding-top: 25% !important;
+			color:#006699;
+			font-family: 'Marmelad',sans-serif;
+		} 
+
+		.back2 .info
+		{
+			font-family: 'Changa',cursive;
+			font-size: 18px;
+		    margin: 2%;
+
+		}
+		p>i
+		{
+			color:#006699;
+			font-size: 4em !important;
+			position: relative; 
+			padding-top: 10px;
+
+		}
+		.social .my-quarter
+		{
+			width: 25%;
+			height: 25%;			
+		}
+
+		.social
+		{
+			margin-left: 2%;
+			margin-top: 8%;
+		}
+		.social img
+		{
+			height: 50px;
+			width: 55px;
+		}
+		
+		.social p
+		{
+			font-size: 14px;
+			font-family: 'Changa',cursive;
+			padding-bottom: 50px; 
+		}
+		.content
+		{
+			margin:1% 2% 1% 4%;	
+			width: 40%;
+			text-align: left;
+			padding-bottom: 10%;
+			font-family: 'Changa',cursive;
+
+		}
+		.content .about
+		{
+			font-size: 10px;
+		}
+		.content i
+		{
+			padding: 0 !important;
+		}
+		.content h3
+		{
+			font-size: 15px;
+			line-height: 2.6;
+		}
+		.image-checkbox h2
+		{
+			padding-left: 30%;
+			line-height: 2.2;
+
+		}
+		#mail
+		{
+			height:20px;
+			background-color: rgba(0,0,0,0.8);
+			border: 1px solid #8bc34a;
+			color: white;
+			width: 86%;
+			font-size: 10px;
+		}
+		input
+		{
+			display: inline !important;
+		}
+
+		
+
+	}
+		
+		@media (min-width:700px)
+		{
+
+		.hometext
+		{
+			padding-top:08%;
+			color: white;
+			line-height: 3.8;
+			text-align:center;			
+		}
+		.tbutton
+		{
+			border-radius:0px 5px;		
+			margin-right:35px;
+			font-size: 20px;
+			padding: 5px 18px;
+			background-color:#70ff3a;
+			opacity: 0.8;
+		}
+
+		.details p
+		{
+			font-size:50px; 
+			font-family: 'Changa',cursive;
+		}
+		.details div
+		{
+			font-size:20px; 
+		}
+		.heading
+		{
+			font-size: 7.3em;
+		}
+		.heading2
+		{
+			font-size: 2em;
+		}
+		.heading3
+		{
+			font-size: 2em;
+		}
+		.modal-content
+		{
+            width: 330px;
+            height: auto;
+            font-size: 14px;
+         }
+        .myfooter
+		{
+			font-size: 20px;
+			font-family: 'Changa',cursive;
+			text-align: left;
+			background-color: #00001a;
+		}
+		.content
+		{
+			margin:1% 4% 1% 8%;	
+			width: 20%;
+			text-align: left;
+			padding-bottom: 2%;
+			font-family: 'Changa',cursive;
+
+		}
+		.content .about
+		{
+			font-size: 17px;
+		}
+		.content i
+		{
+			padding: 0 !important;
+		}
+		.myhead
+		{
+			font-size: 30px;
+			color:rgba(255,255,255,0.9);
+			border-bottom: 2px solid white;
+			font-family: 'Marmelad',sans-serif; 
+		}
+		.back2 .aboutus
+		{
+			margin-top: 30px;
+			margin-left:6%;
+			width: 25%;
+			border-radius: 3px;
+			background-color: rgba(255,255,255,0.8);
+			height: 180px;
+			padding-top: 2%;
+			box-shadow: 2px 2px 2px 2px black;
+			transition: 1.7s;
+			transform-style: preserve-3d;
+			position: relative;
+
+		}
+
+		.heads
+		{	
+			font-size: 25px;
+			padding-top: 20% !important;
+			color:#006699;
+			font-family: 'Marmelad',sans-serif;
+		} 
+		.back2 .info
+		{
+			font-family: 'Changa',cursive;
+			font-size: 18px;
+			padding: 10px;
+		}
+
+		p>i
+		{
+			color:#006699;
+			padding-top: 10px;
+			font-size: 4em !important;
+			position: relative; 
+		}
+		#mail
+		{
+			height: 35px;
+			background-color: rgba(0,0,0,0.8);
+			border: 1px solid #8bc34a;
+			color: white;
+			width: 200px;
+			font-size: 14px;
+		}
+		.social .my-quarter
+		{
+			width: 15%;
+			height: 25%;			
+		}
+		.social
+		{
+			margin-left: 28%;
+			margin-top: 3%;
+		}
+		.social img
+		{
+			height: 70px;
+			width: 80px;
+		}
+		
+		.social p
+		{
+			font-size: 18px;
+			font-family: 'Changa',cursive;
+			padding-bottom: 80px; 
+		}
+		.content h3
+		{
+			font-size: 25px;
+			line-height: 2.6;
+		}
+		input
+		{
+			display: inline !important;
+		}
+
+	}
+
+		
+
+		
